@@ -53,7 +53,7 @@ h1{
     height: 90px;
     border-radius: 60%;
     border: 1px solid #4ba598;
-    margin: 0.7rem  0.5rem ;
+    margin: 0.7rem  1rem ;
   }
   ul div:hover{
     background-color: #c1f3ec;
@@ -71,11 +71,11 @@ h1{
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: black;
-    font-size: 22px;
+    font-size: 32px;
     text-align: center;
     margin: 0;
-    padding-top: 3rem;
-    margin-left: -3rem;
+    padding-top: 1rem;
+    margin-left: -4rem;
   }
   footer{
     background-color:#4ba598;
@@ -85,9 +85,17 @@ h1{
     width: 24px;
     height: 24px;
     margin-top: 1rem;
+    color: #ffffff;
   }
   footer div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 4.6rem;
+  }
+
+  p span{
+    font-size: 28px;
+  }
+  p  .value{
+    font-size: 14px;
   }

@@ -114,19 +114,19 @@ let myCurrentHTML = `<h2>Pollental</h2>
                     <ul>
                     <div>
                     <img src="aassets/images/spring-birch-buds-isolated-on-600nw-100045022.webp">
-                    <p>Birk ${myCurrentData.birch_pollen}</p>
+                    <p>Birk <br><span style="font-weight: bold;">${myCurrentData.birch_pollen}</span><span class="value">&nbsp;p/m3</span></p>
                     </div>
                     <div>
                     <img src="aassets/images/grass-allergies.jpg">
-                    <p>Græs ${myCurrentData.grass_pollen}</p>
+                    <p>Græs <br><span style="font-weight: bold;"> ${myCurrentData.grass_pollen}</span><span class="value">&nbsp;p/m3</span></p>
                     </div>
                     <div>
                     <img src="aassets/images/csm_shutterstock_1783989908_484801fba8.jpg">
-                    <p>Bynke ${myCurrentData.mugwort_pollen}</p>
+                    <p>Bynke <br><span style="font-weight: bold;"> ${myCurrentData.mugwort_pollen}</span><span class="value">&nbsp;p/m3</span></p>
                     </div>
                     <div>
                     <img src="aassets/images/ragweed-pollen-woes-BT.webp">
-                    <p>Ambrosie ${myCurrentData.ragweed_pollen}</p>
+                    <p>Ambrosie <br><span style="font-weight: bold;">${myCurrentData.ragweed_pollen}</span><span class="value">&nbsp;p/m3</span></p>
                     </div>
 
                     </ul>`
