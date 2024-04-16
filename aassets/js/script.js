@@ -106,14 +106,29 @@ function buildPollenView(viewData) {
 let myDisplayElement = document.getElementById('pollenData')
 
 console.log(viewData[0]);
+console.log((myDisplayElement));
 
 let myCurrentData = viewData[0] 
 
 let myCurrentHTML = `<h2>Pollental</h2>
                     <ul>
-                    <li>Birk ${myCurrentData.birch_pollen}</li>
-                    <li>Elm ${myCurrentData.mugwort_pollen}</li>
-                    <li>Grass ${myCurrentData.grass_pollen}</li>
+                    <div>
+                    <img src="aassets/images/spring-birch-buds-isolated-on-600nw-100045022.webp">
+                    <p>Birk ${myCurrentData.birch_pollen}</p>
+                    </div>
+                    <div>
+                    <img src="aassets/images/grass-allergies.jpg">
+                    <p>Græs ${myCurrentData.grass_pollen}</p>
+                    </div>
+                    <div>
+                    <img src="aassets/images/csm_shutterstock_1783989908_484801fba8.jpg">
+                    <p>Bynke ${myCurrentData.mugwort_pollen}</p>
+                    </div>
+                    <div>
+                    <img src="aassets/images/ragweed-pollen-woes-BT.webp">
+                    <p>Ambrosie ${myCurrentData.ragweed_pollen}</p>
+                    </div>
+
                     </ul>`
 
 myDisplayElement.innerHTML = myCurrentHTML

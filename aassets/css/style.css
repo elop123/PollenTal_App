@@ -1,0 +1,93 @@
+body{
+    border: 1px solid black;
+    width: 390px;
+    height: 844px;
+    margin: auto;
+    background-color: #e2f1e6; 
+}
+
+header {
+    width: 390px;
+    height: 140px;
+    background-color: #4ba598; 
+  }
+  h1{
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 10%;
+  }
+  h2{
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #3f877c;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 8%;
+  }
+main{
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    height: 552px;
+    width:338px;
+    align-items: center;
+}
+
+h1{
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+  #pollenData img{
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    border: 1px solid #4ba598;
+    margin: 0.7rem  0.5rem ;
+  }
+  ul div:hover{
+    background-color: #c1f3ec;
+  }
+  ul div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #4ba598;
+    border-radius: 10px;
+    width: 300px;
+    height: 110px;
+    margin-top: 1rem;
+  }
+  ul div p{
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    padding-top: 3rem;
+    margin-left: -3rem;
+  }
+  footer{
+    background-color:#4ba598;
+    height: 60px;
+  }
+  footer img{
+    width: 24px;
+    height: 24px;
+    margin-top: 1rem;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 4.6rem;
+  }
