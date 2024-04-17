@@ -41,7 +41,8 @@ throw new Error('Network response was not ok');
 return response.json();
 })
 .then(data => {
- buildLocationName(data.address.city);
+    console.log(data);
+ buildLocationName(data.address.town);
 })
 .catch(error => {
 //console.error('Fetch error:', error);
@@ -114,7 +115,8 @@ let myCurrentHTML = `<h2>Pollental</h2>
                     <ul>
                     <div>
                     <img src="aassets/images/spring-birch-buds-isolated-on-600nw-100045022.webp">
-                    <p>Birk <br><span style="font-weight: bold;">${myCurrentData.birch_pollen}</span><span class="value">&nbsp;p/m3</span><br><button>Vælg</button></p>
+                    <p>Birk <br><span style="font-weight: bold;">${myCurrentData.birch_pollen}</span>
+                    <span class="value">&nbsp;p/m3</span><br><button id="myBtn" class="pressBtn">Vælg</button></p>
                     
                     </div>
                     
@@ -134,57 +136,17 @@ let myCurrentHTML = `<h2>Pollental</h2>
                     </ul>`
 
 myDisplayElement.innerHTML = myCurrentHTML
+
 }
 
+// Save data to local storage 
+localStorage.setItem('myBtn', 'true');
+const myBtn = document.getElementsByClassName("pressBtn");
+console.log(myBtn);
 
 
-// getLocation()
 
 
-
-
-// function getLocation() {
-
-//     if (navigator.geolocation) {
-
-//         //  navigator.geolocation.getCurrentPosition requires a succes function name as first param and a error function name as second param.
-
-//         navigator.geolocation.getCurrentPosition(PositionRecieved, geoError);
-
-//     } else {
-//         alert("Geolocation is not supported by this browser.")
-//     }
-// }
-
-// // Geo location succes function recieves a data object 
-// function PositionRecieved(position) {
-//     //console.log(position);
-//     console.log(position.coords.longitude);
-//     console.log(position.coords.latitude);
-
-//     // get location name
-//     //GetHumanReadableLocation(position.coords.latitude, position.coords.longitude)
-
-//     // // get pollen data on location
-//     // GetPollenData(position.coords.latitude, position.coords.longitude)
-// }
-
-
-// //geo error function recievs a data object
-// function geoError(error) {
-
-//     console.log(error.message);
-// }
-
-
-// // View code
-//  function buildLocationName(city) {
-
-    
-//     let myCity = document.getElementById("location");
-
-//      myCity.innerText = city
-//      myCity.innerHTML = '<h1><span>Location: </span>' + city + '</h1>'}
 
 
 
