@@ -15,10 +15,10 @@ header {
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
     margin: 0;
-    padding: 10%;
+    padding: 5%;
   }
   h2{
     font-family: "Inter-Regular", Helvetica;
@@ -27,7 +27,7 @@ header {
     font-size: 40px;
     text-align: center;
     margin: 0;
-    padding: 8%;
+    padding: 1.5%;
   }
 main{
     position: relative;
@@ -38,22 +38,13 @@ main{
     align-items: center;
 }
 
-h1{
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 36px;
-    text-align: center;
-    margin: 0;
-}
-
   #pollenData img{
     display: block;
     width: 90px;
     height: 90px;
     border-radius: 60%;
     border: 1px solid #4ba598;
-    margin: 0.7rem  1rem ;
+    margin: 1.2rem  ;
   }
   ul div:hover{
     background-color: #c1f3ec;
@@ -64,8 +55,8 @@ h1{
     border: 2px solid #4ba598;
     border-radius: 10px;
     width: 300px;
-    height: 110px;
-    margin-top: 1rem;
+    height: 130px;
+    margin-top: 0.5rem;
   }
   ul div p{
     font-family: "Inter-Regular", Helvetica;
@@ -74,12 +65,12 @@ h1{
     font-size: 32px;
     text-align: center;
     margin: 0;
-    padding-top: 1rem;
+    padding-top: 0.7rem;
     margin-left: -4rem;
   }
   footer{
     background-color:#4ba598;
-    height: 60px;
+    height: 55px;
   }
   footer img{
     width: 24px;
@@ -98,4 +89,16 @@ h1{
   }
   p  .value{
     font-size: 14px;
+  }
+ button{
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    width:75px;
+    /* margin-top: -2rem;
+    margin-left: 2.8rem; */
+    justify-content: center;
+  }
+  button:hover{
+    background-color: #ecd8b2;
   }
