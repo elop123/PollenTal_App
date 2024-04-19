@@ -57,6 +57,7 @@ main{
     width: 300px;
     height: 130px;
     margin-top: 0.5rem;
+    box-shadow: 0 3px 10px #4ba598;
   }
   ul div p{
     font-family: "Inter-Regular", Helvetica;
@@ -102,3 +103,16 @@ main{
   button:hover{
     background-color: #ecd8b2;
   }
+
+  a{
+  font-size: 24px; 
+  }
+  
+  a:hover {
+  transform: scale(1.2); 
+  font-weight: bold; 
+  }
+
+  
+    
+  
