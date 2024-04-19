@@ -116,22 +116,22 @@ let myCurrentHTML = `<h2>Pollental</h2>
                     <div>
                     <img src="aassets/images/spring-birch-buds-isolated-on-600nw-100045022.webp">
                     <p>Birk <br><span style="font-weight: bold;">${myCurrentData.birch_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button id="myBtn" class="pressBtn">Vælg</button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button id="myBtn" class="pressBtn"></button></p>
                     </div>
                     <div>
                     <img src="aassets/images/grass-allergies.jpg">
                     <p>Græs <br><span style="font-weight: bold;"> ${myCurrentData.grass_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button>Vælg</button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button></button></p>
                     </div>
                     <div>
                     <img src="aassets/images/csm_shutterstock_1783989908_484801fba8.jpg">
                     <p>Bynke <br><span style="font-weight: bold;"> ${myCurrentData.mugwort_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button>Vælg</button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button></button></p>
                     </div>
                     <div>
                     <img src="aassets/images/ragweed-pollen-woes-BT.webp">
                     <p>Ambrosie <br><span style="font-weight: bold;">${myCurrentData.ragweed_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button>Vælg</button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button></button></p>
                     </div>
 
                     </ul>`
