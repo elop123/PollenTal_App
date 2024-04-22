@@ -1,0 +1,16 @@
+{
+    "name": "Pollen_Tal App",
+    "short_name": "PollenTalApp",
+    "id": ".index.html",
+    "display": "standalone",
+    "background_color": "#e2f1e6",
+    "theme_color": "#e2f1e6",
+	"orientation": "portrait-primary",
+    "description": "An Aplication which shows allergy level in the air",
+    "icons": [
+        {
+          "src": "aassets/images/pollen.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }]
+}
