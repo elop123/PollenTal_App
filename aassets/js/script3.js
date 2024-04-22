@@ -21,7 +21,8 @@ function getUserLocation() {
         navigator.geolocation.getCurrentPosition(function(position) {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
-            updateMapLocation(latitude, longitude); // Call function to update map location
+            updateMapLocation(latitude, longitude); 
+// Call function to update map location
         }, function(error) {
             console.error('Error getting user location:', error);
         });

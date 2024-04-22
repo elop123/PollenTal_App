@@ -114,22 +114,22 @@ let myCurrentData = viewData[0]
 let myCurrentHTML = `<h2>Pollental</h2>
                     <ul>
                     <div>
-                    <img src="aassets/images/spring-birch-buds-isolated-on-600nw-100045022.webp">
+                    <img src="aassets/images/spring-birch-buds-isolated-on-600nw-100045022.webp" alt="birk">
                     <p>Birk <br><span style="font-weight: bold;">${myCurrentData.birch_pollen}</span>
                     <span class="value">&nbsp;p/m&sup3;</span><br><button id="myBtn" class="pressBtn"></button></p>
                     </div>
                     <div>
-                    <img src="aassets/images/grass-allergies.jpg">
+                    <img src="aassets/images/grass-allergies.jpg" alt="grass">
                     <p>Græs <br><span style="font-weight: bold;"> ${myCurrentData.grass_pollen}</span>
                     <span class="value">&nbsp;p/m&sup3;</span><br><button></button></p>
                     </div>
                     <div>
-                    <img src="aassets/images/csm_shutterstock_1783989908_484801fba8.jpg">
+                    <img src="aassets/images/csm_shutterstock_1783989908_484801fba8.jpg" alt="bynke">
                     <p>Bynke <br><span style="font-weight: bold;"> ${myCurrentData.mugwort_pollen}</span>
                     <span class="value">&nbsp;p/m&sup3;</span><br><button></button></p>
                     </div>
                     <div>
-                    <img src="aassets/images/ragweed-pollen-woes-BT.webp">
+                    <img src="aassets/images/ragweed-pollen-woes-BT.webp" alt="ambrosie">
                     <p>Ambrosie <br><span style="font-weight: bold;">${myCurrentData.ragweed_pollen}</span>
                     <span class="value">&nbsp;p/m&sup3;</span><br><button></button></p>
                     </div>

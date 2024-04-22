@@ -1,7 +1,8 @@
 {
     "name": "Pollen_Tal App",
     "short_name": "PollenTalApp",
-    "id": ".index.html",
+    "id": "/index.html",
+    "start_url":"/index.html",
     "display": "standalone",
     "background_color": "#e2f1e6",
     "theme_color": "#e2f1e6",
