@@ -1,0 +1,141 @@
+body{
+    border: 1px solid black;
+    width: 390px;
+    height: 844px;
+    margin: auto;
+    background-color: #e2f1e6; 
+}
+
+header {
+    width: 390px;
+    height: 140px;
+    background-color: #4ba598; 
+  }
+  h1{
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding: 5%;
+  }
+  h2{
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #3f877c;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 1.5%;
+  }
+main{
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    height: 552px;
+    width:338px;
+    align-items: center;
+}
+
+  #pollenData img{
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    border: 1px solid #4ba598;
+    margin: 1.2rem  ;
+  }
+  ul div:hover{
+    background-color: #c1f3ec;
+  }
+  ul div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #4ba598;
+    border-radius: 10px;
+    width: 300px;
+    height: 130px;
+    margin-top: 0.5rem;
+    box-shadow: 0 3px 10px #4ba598;
+  }
+  ul div p{
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.7rem;
+    margin-left: -4rem;
+  }
+  footer{
+    background-color:#4ba598;
+    height: 55px;
+  }
+  footer img{
+    width: 24px;
+    height: 24px;
+    margin-top: 1rem;
+    color: #ffffff;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 4.6rem;
+  }
+
+  p span{
+    font-size: 28px;
+  }
+  p  .value{
+    font-size: 14px;
+  }
+ /* button{
+    background-color: green;
+    border-radius: 12px;
+    border: none;
+    width:50px;
+    height: 10px;
+    /* margin-top: -2rem;
+    margin-left: 2.8rem; */
+    
+  
+
+  a{
+  font-size: 24px; 
+  }
+  
+  a:hover {
+  transform: scale(1.2); 
+  font-weight: bold; 
+  }
+
+  #birchBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+  color:#eaea12;
+} 
+#grassBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+} 
+#bynkeBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+} 
+#ambrosieBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+}
+
+.select{
+  text-align:  center;
+}
+label{
+  border-radius: 16px;
+}
