@@ -91,18 +91,16 @@ main{
   p  .value{
     font-size: 14px;
   }
- button{
-    background-color: orange;
-    border-radius: 10px;
+ /* button{
+    background-color: green;
+    border-radius: 12px;
     border: none;
-    width:75px;
+    width:50px;
+    height: 10px;
     /* margin-top: -2rem;
     margin-left: 2.8rem; */
-    justify-content: center;
-  }
-  button:hover{
-    background-color: #ecd8b2;
-  }
+    
+  
 
   a{
   font-size: 24px; 
@@ -113,6 +111,31 @@ main{
   font-weight: bold; 
   }
 
-  
-    
-  
+  #birchBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+  color:#eaea12;
+} 
+#grassBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+} 
+#bynkeBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+} 
+#ambrosieBtn{
+  border-radius: 15px;
+  border: none;
+  height: 12px;
+}
+
+.select{
+  text-align:  center;
+}
+option :nth-child(1){
+  border-radius: 16px;
+}
