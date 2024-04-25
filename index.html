@@ -18,11 +18,12 @@
     <header>
         <div id="app"> </div>
         <div class="select">
-        <select id="locationSelect">
-         <option value="" onclick="getSelectedLocation()">Select Location</option>
-         <option >Aalborg</option>
-         <option >Aarhus</option>
-         <option >Københaven</option>
+        <label for="locationSelect">Select a city:</label>
+        <select id="locationSelect"onclick="getSelectedLocation()">
+         <option value="Select" ></option>
+         <option value="Aalborg">Aalborg</option>
+         <option value="Aarhus">Aarhus</option>
+         <option value="Copenhagen">København</option>
         </select>
         </div>
     </header>

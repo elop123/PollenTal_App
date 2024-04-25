@@ -20,7 +20,7 @@ function showPosition(position) {
 
 getHumanReadableLocation(position.coords.latitude, position.coords.longitude)
 getpollenData(position.coords.latitude, position.coords.longitude)
-getCoordinatesAndPollenData();
+//getCoordinatesAndPollenData();
 
 }
 
@@ -122,22 +122,22 @@ let myCurrentHTML = `<h2>Pollental</h2>
                     <img src="aassets/images/spring-birch-buds-isolated-on-600nw-100045022.webp" alt="birk">
                     <p>Birk <br>
                     <span style="font-weight: bold;">${myCurrentData.birch_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button id="birchBtn" ></button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button type="button" id="birchBtn" title="birch"></button></p>
                     </div>
                     <div>
                     <img src="aassets/images/grass-allergies.jpg" alt="grass">
                     <p>Græs <br><span style="font-weight: bold;"> ${myCurrentData.grass_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button id="grassBtn"></button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button  id="grassBtn" type="button"  title="grass"></button></p>
                     </div>
                     <div>
                     <img src="aassets/images/csm_shutterstock_1783989908_484801fba8.jpg" alt="bynke">
                     <p>Bynke <br><span style="font-weight: bold;"> ${myCurrentData.mugwort_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button id="bynkeBtn"></button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button  id="bynkeBtn" type="button"  title="bynke"></button></p>
                     </div>
                     <div>
                     <img src="aassets/images/ragweed-pollen-woes-BT.webp" alt="ambrosie">
                     <p>Ambrosie <br><span style="font-weight: bold;">${myCurrentData.ragweed_pollen}</span>
-                    <span class="value">&nbsp;p/m&sup3;</span><br><button id="ambrosieBtn"></button></p>
+                    <span class="value">&nbsp;p/m&sup3;</span><br><button id="ambrosieBtn" type="button"  title="ambrosie"></button></p>
                     </div>
 
                     </ul>`
@@ -149,25 +149,26 @@ updateButtonSizeAndColor(myCurrentData);
 
 // //Show pollen data for other cities
 
-// function getSelectedLocation() {
-//     const locationSelect = document.getElementById("locationSelect");
-//     const selectedLocation = locationSelect.city;
+function getSelectedLocation() {
+    const locationSelect = document.getElementById("locationSelect");
+    const selectedLocation = locationSelect.value;
 
-//     if (selectedLocation === "Aarhus") {
-//         getCoordinatesAndPollenData("Aarhus");
-//     } else if (selectedLocation === "Københaven") {
-//         getCoordinatesAndPollenData("København");
-//     }
-// }
+    if (selectedLocation === "Aarhus") {
+        getCoordinatesAndPollenData("Aarhus");
+    } else if (selectedLocation === "Copenhagen") {
+        getCoordinatesAndPollenData("Copenhagen");
+    }
+    // Add more else if conditions for other cities if needed
+}
 
-// function getCoordinatesAndPollenData(city) {
-
-//     if (city === "Aarhus") {
-//         getpollenData(56.1629, 10.2039); // Latitude and longitude for Aarhus
-//     } else if (city === "København") {
-//         getpollenData(55.6761, 12.5683); // Latitude and longitude for København (Copenhagen)
-//     }
-// }
+function getCoordinatesAndPollenData(city) {
+    if (city === "Aarhus") {
+        getpollenData(56.1629, 10.2039); // Latitude and longitude for Aarhus
+    } else if (city === "Copenhagen") {
+        getpollenData(55.6761, 12.5683); // Latitude and longitude for København (Copenhagen)
+    }
+   
+}
 
 
 
@@ -187,8 +188,8 @@ console.log(recivedData);
     const ambrosiePollenValue = recivedData.ragweed_pollen;
 
     if (recivedData.birch_pollen === 0) {
-        birchButton.style.backgroundColor = 'gray';
-        birchButton.style.width = '16px';
+       // birchButton.style.backgroundColor = 'gray';
+       // birchButton.style.width = '0';
     } else if (recivedData.birch_pollen > 0 && recivedData.birch_pollen < 5) {
         birchButton.style.backgroundColor = 'green';
         birchButton.style.width = '30px';
@@ -201,8 +202,8 @@ console.log(recivedData);
     }
 
     if (recivedData.grass_pollen === 0) {
-        grassButton.style.backgroundColor = 'gray';
-        grassButton.style.width = '16px';
+        //grassButton.style.backgroundColor = 'gray';
+        //grassButton.style.width = '16px';
     } else if (recivedData.grass_pollen > 0 && recivedData.grass_pollen < 5) {
         grassButton.style.backgroundColor = 'green';
         grassButton.style.width = '30px';
@@ -215,8 +216,8 @@ console.log(recivedData);
     }
 
     if (recivedData.mugwort_pollen === 0) {
-        bynkeButton.style.backgroundColor = 'gray';
-        bynkeButton.style.width = '16px';
+       // bynkeButton.style.backgroundColor = 'gray';
+        //bynkeButton.style.width = '16px';
     } else if (recivedData.grass_pollen > 0 && recivedData.grass_pollen < 5) {
         bynkeButton.style.backgroundColor = 'green';
         bynkeButton.style.width = '30px';
@@ -229,8 +230,8 @@ console.log(recivedData);
     } 
 
     if (recivedData.ragweed_pollen === 0) {
-        ambrosieButton.style.backgroundColor = 'gray';
-        ambrosieButton.style.width = '16px';
+        //ambrosieButton.style.backgroundColor = 'gray';
+        //ambrosieButton.style.width = '0';
     } else if (recivedData.grass_pollen > 0 && recivedData.grass_pollen < 5) {
         ambrosieButton.style.backgroundColor = 'green';
         ambrosieButton.style.width = '30px';

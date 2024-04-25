@@ -136,6 +136,6 @@ main{
 .select{
   text-align:  center;
 }
-option :nth-child(1){
+label{
   border-radius: 16px;
 }
