@@ -18,7 +18,7 @@ toggles.forEach(toggle => {
         const checkbox = toggle.previousElementSibling;
         if (toggle.classList.contains("active")) {
             checkbox.checked = true;
-            checkbox.style.display = "none"; // Hide the checkbox
+            checkbox.style.display = "block"; // Hide the checkbox
             // Save the state to localStorage
             localStorage.setItem(checkbox.id, 'checked');
         } else {
