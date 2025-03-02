@@ -1,6 +1,7 @@
 const staticCacheName = "site-static-v1";
 const dynamicCacheName = "site-dynamic-v2";
 const fallbackPage = "/fallback.html";
+const apiCacheName = "site-api-v3";
 
 const cacheAssets = [
 	'/index.html',
@@ -60,7 +61,7 @@ self.addEventListener('activate', event => {
       return Promise.all(
         keys
           // Filter everyone who is not a member of the current cache version
-          .filter((key) => key !== staticCacheName && key !== dynamicCacheName)
+          .filter((key) => key !== staticCacheName && key !== dynamicCacheName && key !== apiCacheName)
           // Map filter array and delete files
           .map((key) => caches.delete(key))
       )
