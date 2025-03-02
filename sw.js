@@ -1,16 +1,19 @@
 const staticCacheName = "site-static-v1";
 const dynamicCacheName = "site-dynamic-v2";
+const fallbackPage = "/fallback.html";
 
 const cacheAssets = [
 	'/index.html',
 	'/map.html',
 	'/settings.html',
+	"/fallback.html",
 	'/aassets/images',
 	'/aassets/css',
 	'/aassets/js/app.js',
 	'/aassets/js/script.js',
 	'/aassets/js/script2.js',
 	'/aassets/js/script3.js'
+	
 ]
 
 /**
@@ -57,7 +60,7 @@ self.addEventListener('activate', event => {
       return Promise.all(
         keys
           // Filter everyone who is not a member of the current cache version
-          .filter((key) => key !== staticCacheName)
+          .filter((key) => key !== staticCacheName && key !== dynamicCacheName)
           // Map filter array and delete files
           .map((key) => caches.delete(key))
       )
@@ -98,7 +101,11 @@ if(event.request.url.indexOf("firestore.googleapis.com") === -1) {
 		  })
 		})
 	  )
-	)})
+	)}).catch(() => {
+		if (event.request.destination === "document") {
+			return caches.match(fallbackPage); // Serve fallback page if offline
+		}
+})
   )
 }
 })
